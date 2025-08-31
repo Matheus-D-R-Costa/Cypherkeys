@@ -17,7 +17,7 @@ contract CypherKeys is ERC721, EIP712, Ownable {
     uint256 private _cypherKeyCounter;    
     mapping(uint256 => address) public cypherIdentities;
     mapping(address => uint256) public nonces;
-    bytes32 private constant ATTESTATION_TYPEHASH = keccak256("Attestation(uint256 fromCypherKey, uint256 toCypherKey, uint256 nonce)");
+    bytes32 private constant ATTESTATION_TYPEHASH = keccak256("Attestation(uint256 fromCypherKey,uint256 toCypherKey,uint256 nonce)");
     mapping(uint256 => mapping(uint256 => bool)) public cryptographyLinks;
     struct Attestation {
         uint256 fromCypherKey;

@@ -161,5 +161,3 @@ const types = {
 ## 📄 Licença
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
-
-**Desenvolvido com ❤️ para a descentralização da identidade digital.**
