@@ -1,14 +1,20 @@
 {
   "name": "cypherkeys",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.6.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "hardhat compile",
+    "deploy:localhost": "hardhat ignition deploy ignition/modules/CypherKeys.js --network localhost",
+    "mint:localhost": "hardhat run scripts/mint.js --network localhost",
+    "attest:localhost": "hardhat run scripts/attest.js --network localhost",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "slither:build": "docker build -f Dockerfile.slither -t cypherkeys-slither-app .",
+    "slither": "docker run --rm cypherkeys-slither-app",
+    "slither:json": "docker run --rm cypherkeys-slither-app . --json -"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.15.0",
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",

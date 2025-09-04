@@ -1,0 +1,15 @@
+{
+  "filter_paths": [
+    "node_modules",
+    "artifacts",
+    "cache",
+    "coverage"
+  ],
+  "printers": [
+    "human-summary",
+    "contract-summary"
+  ],
+  "json": "slither-report.json",
+  "disable-color": false,
+  "verbose": true
+}
